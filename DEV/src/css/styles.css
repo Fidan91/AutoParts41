@@ -109,6 +109,15 @@ html, body {
     margin-right: 6px;    
 }
 
+#header-img{
+    background: url('../img/Eingang_HH2.jpg') top/cover no-repeat;
+    height: 80vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
 /* === SERVICE BEREICH */
 #service{
     background-color: #e7e4dc;
@@ -281,15 +290,16 @@ Erstellt mit Hilfe von Youtube-Video: https://www.youtube.com/watch?v=Reu0hHbis5
 }
 #footer .icon-wrapper{
     transition: transfrom .2s ease-in-out;
-    margin-right: 13px;
+    margin-right: 15px;
 }
 
 #footer .icon-wrapper:hover{
     transform: scale(1.2);
 }
 
-#footer h6{
+#footer .footer-header{
     color: #ec7f01;
+    letter-spacing: 0.1rem;
 }
 
 .footer-img-logo{
@@ -297,16 +307,6 @@ Erstellt mit Hilfe von Youtube-Video: https://www.youtube.com/watch?v=Reu0hHbis5
     height: 80px;
 }
 
-.flex{
-    display: flex; 
-    justify-content: center; 
-}
-
-#footer .rechtliches-links > a:hover{
+#footer .rechtliche-links:hover{
     text-decoration: underline;
-}
-
-#footer .footer-header{
-    color: #ec7f01;
-    letter-spacing: 0.1rem;
 }

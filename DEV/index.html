@@ -1,301 +1,295 @@
 <!DOCTYPE html>
 <html lang="de">
-
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device=width, initial-scale=1.0">
-        <title>Auto-Parts 41</title>
-        
-
-        <!-- FAVICON -->
-        <link rel="icon" type="image/png" href="./src/img/favicon/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="./src/img/favicon/favicon.svg" />
-        <link rel="shortcut icon" href="./src/img/favicon/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon/apple-touch-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-        <link rel="manifest" href="./src/img/favicon/site.webmanifest" />
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Auto-Parts 41 - Heimsheim & Rosenheim</title>
 
         <!-- AUTOREN-STYLESHEET -->
-        <link rel="stylesheet" type="text/css" href="./src/css/styles.css">
+        <link rel="stylesheet" href="./src/css/styles.css">
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <!-- BOOTSTRAP ICON -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     </head>
-
     <body>
 
-        <!-- NAVIGATIONSLEISTE -->
-        <nav id="header-nav">
-            <!-- DESKTOP NAVIGATION -->
-            <div class="container" id="desktop-nav">
-                <div class="row">
-                    <div class="col-6">
-
-                        <a href="index.html" class="logo-link">
-                            <img src="./src/img/1-Logo Blanko.png" alt="Logo von Auto-Parts 41">
-                        </a>
-
-                        <ul>
-                            <li class="active"><a href="index.html">HOME</a></li>
-                            <li><a href="überUns.html">ÜBER UNS</a></li>
-                            <li><a href="leistungen.html">LEISTUNGEN</a></li>
-                            <li><a href="kontakt.html">KONTAKT</a></li>
-                            <li><a href="impressum.html">IMPRESSUM</a></li>
-                        </ul>
-
-                    </div>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow">
+            <div class="container">
+                <a href="index.html">
+                    <img src="./src/img/1-Logo_blanko.png" alt="Logo von Auto-Parts 41" style="height: 70px; width: auto;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Startseite</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#locations">Standorte</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#brands">Partner</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Über uns</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                        <li class="nav-item ms-3">
+                            <a href="https://api.whatsapp.com/send/?phone=%2B4915146150632&text&type=phone_number&app_absent=0" 
+                            class="btn btn-success d-flex align-items-center" target="_blank">
+                            <svg class ="whatsapp-logo"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>
+                            Bestellhotline
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-
-            <!-- MOBIL NAVIGATION -->
-            <div class="container" id="mobile-nav">
-                <div class="row">
-                    <div class="col-6">
-
-                        <a href="index.html" class="logo-link">
-                            <img src="./src/img/1-Logo Blanko.png" alt="Logo von Auto-Parts 41">
-                        </a>
-                        
-                        <div class="clearfix" id="mobile-nav-dropdown">
-                            <div id="mobile-nav-button"><span>&equiv;</span></div>
-
-                            <div class="clearfix" id="mobile-nav-content">
-
-                                <ul>
-                                    <li class="active"><a href="index.html">HOME</a></li>
-                                    <li><a href="überUns.html">ÜBER UNS</a></li>
-                                    <li><a href="leistungen.html">LEISTUNGEN</a></li>
-                                    <li><a href="kontakt.html">KONTAKT</a></li>
-                                    <li><a href="impressum.html">IMPRESSUM</a></li>
-                                </ul>
-                            </div>
-
-                            </div>
-
-                        </div>
-                        
-                    </div>
-                </div>
-            </div> 
-
         </nav>
-        
 
-        <!-- HEADER BANNER -->
-        <header id="header-banner"></header>
-
-
-        <!-- NEWSLETTER BEREICH -->
-        <section id="newsletter-bereich">
-
+         <!-- Hero Section mit Bild und Begrüßung -->
+        <header id="header-img"  class="hero bg-dark text-white text-center py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <p id="nb-werbetext"><span class="wichtiger-text">Melde dich jetzt für den Newsletter an und verpasse nichts mehr!</span> Wir schicken dir nur interessante Informationen.</p>
-
-                    </div>
-                    <div class="col-2 clearfix">
-                        <form id="nb-form" action="index.html" method="post">
-                            <label class="screenreader" for="nb-email-input">E-Mail</label>
-                            <input id="nb-email-input" type="text" name="email" placeholder="Deine E-Mail Adresse" pattern="(?:[a-z0-9!#$%&'*+=?^_`\{\|\}~\-]+(?:\.[a-z0-9!#$%&'*+=?^_`\{\|\}~\-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9\-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9\-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9\-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" title="Gib eine gültige E-Mail Adresse ein.">
-                            
-                            <button class="btn-typ-1" id="nb-btn" type="submit">Jetzt anmelden!</button>
-                        </form>
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-start bg-dark bg-opacity-75 p-4 rounded">
+                        <h1>Herzlich willkommen bei <br>Auto-Parts 41</h1>
+                        <p>Ihr zuverlässiger Partner für hochwertige Autoteile!</p>
                     </div>
                 </div>
             </div>
-
+        </header>
+    
+        <!-- Standorte -->
+        <section id="locations" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Unsere Standorte</h2>
+                
+                <!-- Standort Heimsheim -->
+                <div class="row mb-5 align-items-center">
+                    <div class="col-md-6">
+                        <div id="carouselHeimsheim" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselHeimsheim" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselHeimsheim" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselHeimsheim" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselHeimsheim" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                              <button type="button" data-bs-target="#carouselHeimsheim" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                              <button type="button" data-bs-target="#carouselHeimsheim" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                              <button type="button" data-bs-target="#carouselHeimsheim" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            </div>
+                            <div class="carousel-inner rounded-4">
+                                <div class="carousel-item active">
+                                    <img src="./src/img/Eingang_HH1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/img/Eingang_HH2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/img/Laden_HH1.JPG" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/img/Laden_HH2.JPG" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/img/Laden_HH3.JPG" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/img/Laden_HH4.JPG" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/img/Laden_HH5.JPG" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeimsheim" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHeimsheim" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Heimsheim</h3>
+                        <p><strong>Adresse:</strong> Musterstraße 1, 71296 Heimsheim</p>
+                        <p><strong>Telefon:</strong> 07033-123456</p>
+                        <p><strong>Öffnungszeiten:</strong><br>Mo-Fr: 08:00 - 18:00 Uhr<br>Sa: 09:00 - 14:00 Uhr</p>
+                        <a href="https://goo.gl/maps/example" class="btn btn-custom" target="_blank">Google Maps</a>
+                        <a href="https://maps.apple.com/?q=Musterstraße+1,71296+Heimsheim" class="btn btn-outline-custom" target="_blank">Apple Maps</a>
+                        <a href="https://g.page/r/example" class="btn btn-outline-custom" target="_blank">Google Bewertung</a>
+                    </div>
+                </div>
+                
+                <!-- Standort Rosenheim (gespiegelte Anordnung) -->
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <img src="img/rosenheim.jpg" class="img-fluid rounded" alt="Standort Rosenheim">
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <h3>Rosenheim</h3>
+                        <p><strong>Adresse:</strong> Beispielweg 5, 83024 Rosenheim</p>
+                        <p><strong>Telefon:</strong> 08031-654321</p>
+                        <p><strong>Öffnungszeiten:</strong><br>Mo-Fr: 08:00 - 18:00 Uhr<br>Sa: 09:00 - 14:00 Uhr</p>
+                        <a href="https://goo.gl/maps/example" class="btn btn-custom" target="_blank">Google Maps</a>
+                        <a href="https://maps.apple.com/?q=Beispielweg+5,83024+Rosenheim" class="btn btn-outline-custom" target="_blank">Apple Maps</a>
+                        <a href="https://g.page/r/example" class="btn btn-outline-custom" target="_blank">Google Bewertung</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
+
+        <!-- Footer -->
+        <footer id="footer" class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-12 col-md-4 mb-3 mb-md-0">
+                        <p>
+                            <img class="footer-img-logo" src="./src/img/AP41-Weiß-removebg-preview.png" alt="Logo Weiß">
+                        </p><br>
+                        <!-- Footer Social Icons -->
+                        <div class="folge-uns-container">
+                            <div class="widget-container">
+                                <div class="icon-wrapper">
+                                    <a href="https://api.whatsapp.com/send/?phone=%2B4915146150632&text&type=phone_number&app_absent=0" target="_blank">
+                                        <svg class ="whatsapp-logo"xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="widget-container">
+                                <div class="icon-wrapper">
+                                    <a href="https://www.instagram.com/auto_parts_41/?__d=11" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="widget-container">
+                                <div class="icon-wrapper">
+                                    <a href="https://www.facebook.com/people/Auto-Parts-41/100093329137510/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                        </svg>  
+                                    </a>
+                                </div>
+                            </div>
+                        </div><br>
+                        
+                        <span><small>&#169 2025 Auto-Parts 41 - Alle Rechte vorbehalten</small></span>
+                    </div>
+                    <!-- Adresse Heimsheim -->
+                    <div class="col-12 col-md-4 mb-3 mb-md-0">
+                        <h5 class="mb-3 footer-header">Heimsheim</h5>
+
+                        <p>Pforzheimer Str. 11<br>71296 Heimsheim</p>
+                        <p><i class="bi bi-telephone-fill"></i>
+                            <a href="07033/4680150"> 07033/468 01 50</a>
+                        </p>
+                        <p><i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:info@auto-parts41.de?subject=Autoteile%20Bestellung&body=Hallo,%20ich%20möchte%20folgende%20Bestellung%20aufgeben.">
+                            info@auto-parts41.de</a>
+                        </p>
+                    </div>
+                    <!-- Adresse Rosenheim und Rechtliches -->
+                    <div class="col-12 col-md-4 mb-3 mb-md-0">
+                        <h5 class="mb-3 footer-header">Rosenheim</h5>
+                        <p>Pichlmayrstr. 21A <br>83024 Rosenheim</p>
+                        <p><i class="bi bi-telephone-fill"></i>
+                            <a href="08031/2719001"> 08031/271 90 01</a>
+                        </p>
+                        <br>
+                        <p>
+                            <a href="datenschutz.html" class="small rechtliche-links">Datenschutz</a><span>&#9;|</span>
+                            <a href="#" class="small rechtliche-links">AGB</a><span>&#9;|</span>
+                            <a href="#" id="openCookieSettings" class="small rechtliche-links">Cookie-Einstellungen</a><span>&#9;|</span>
+                            <a href="impressum.html" class="small rechtliche-links">Impressum</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- COOKIES -->
+        <div id="cookieConsentBox" class="shadow-lg p-4 bg-white text-dark rounded-4 border"
+            style="z-index: 9999; display: none; max-width: 500px; width: 90%; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <h5 class="mb-3 text-dark">Cookie-Einstellungen</h5>
+            <p class="mb-3 small">
+            Wir verwenden Cookies, um unsere Website benutzerfreundlicher zu gestalten. Sie können selbst entscheiden, ob Sie Analyse-Cookies zulassen möchten.
+            </p>
         
-        <!-- LOGO-->
-        <div id="animiertes-logo">
-            <img src="./src/img/webdesign-logo-klein.png" alt="Logo WEBDESIGN made simple">
+            <form id="cookieForm">
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="necessaryCookies" checked disabled>
+                <label class="form-check-label" for="necessaryCookies">
+                Notwendige Cookies (immer aktiv)
+                </label>
+            </div>
+        
+            <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="analyticsCookies">
+                <label class="form-check-label" for="analyticsCookies">
+                Analyse-Cookies (z.B. zur Verbesserung der Website)
+                </label>
+            </div>
+        
+            <div class="d-flex justify-content-end gap-2">
+                <button type="button" class="btn btn-outline-secondary btn-sm" id="acceptNecessary">Nur notwendige</button>
+                <button type="button" class="btn btn-sm" style="background-color: #ec7f01; color: white;" id="acceptAll">Alle akzeptieren</button>
+            </div>
+            </form>
         </div>
- 
-        <!-- LEISTUNGEN-BEREICH -->
-        <section id="leistungen-bereich">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <header class="intro-container">
-                            <h1>Auto-Parts 41</h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, nobis eum omnis ipsam magnam nesciunt libero quasi fugiat eaque, doloribus cum, ducimus aliquid incidunt non aliquam rerum impedit distinctio atque?</p>
-                        </header>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                        <article class="leistungs-teaser-box">
-                            <h2>Leistung #1</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia repellendus dicta est necessitatibus molestias consequuntur nostrum non nemo odio? Rem ex expedita ratione aliquam doloribus accusantium reiciendis, temporibus at?</p>
-                            <a class="btn-typ-2 leistung-ansehen-btn" href="leistungen.html#leistung1">Ansehen</a>
-                        </article>
-                    </div>
-                    <div class="col-3">
-                        <article class="leistungs-teaser-box">
-                            <h2>Leistung #2</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia repellendus dicta est necessitatibus molestias consequuntur nostrum non nemo odio? Rem ex expedita ratione aliquam doloribus accusantium reiciendis, temporibus at?</p>
-                            <a class="btn-typ-2 leistung-ansehen-btn" href="leistungen.html#leistung2">Ansehen</a>
-                        </article>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                        <article class="leistungs-teaser-box">
-                            <h2>Leistung #3</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia repellendus dicta est necessitatibus molestias consequuntur nostrum non nemo odio? Rem ex expedita ratione aliquam doloribus accusantium reiciendis, temporibus at?</p>
-                            <a class="btn-typ-2 leistung-ansehen-btn" href="leistungen.html#leistung3">Ansehen</a>
-                        </article>
-                    </div>
-                    <div class="col-3">
-                        <article class="leistungs-teaser-box">
-                            <h2>Leistung #4</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia repellendus dicta est necessitatibus molestias consequuntur nostrum non nemo odio? Rem ex expedita ratione aliquam doloribus accusantium reiciendis, temporibus at?</p>
-                            <a class="btn-typ-2 leistung-ansehen-btn" href="leistungen.html#leistung4">Ansehen</a>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--Emmet Abkürzung
-        section#leistungen-bereich>div.container>div.row>div.col-6>h1{Unsere Leisungen}+p{lorem}^^(div.row>(div.col-3>h2{Leistung #$}+p{lorem}+a{Ansehen})*2)*2
-        -->
-        
-
-        <!-- VIDEO-BEREICH -->
-        
-        <section id="video-bereich">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <header class="intro-container">
-                            <h1>Das sind wir!</h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione doloremque et consectetur quis nemo illo officia harum exercitationem dolorem aliquid! Illo veniam dolore assumenda debitis vel quas velit fuga ea?</p>
-                        </header>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <video src="./src/mov/WEBDESIGN+made+simple+-+Trailer.mp4" controls>
-                            <p>
-                                Das Video kann leider nicht wiedergegeben werden.
-                                Du findest es jedoch auch <a href="https://youtu.be/Ut2goGezYM4">hier</a>.
-                            </p>
-                        </video>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        
-        <!-- SERVICE-BEREICH -->
-        <section id="service-bereich">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <header class="intro-container">
-                            <h1>Unsere Services</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatibus vitae, asperiores earum, quidem veritatis unde officiis 
-                               vero molestias praesentium adipisci? Facilis numquam ullam dolores ducimus quasi laudantium quas? Maiores!</p>
-                        </header>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <article class="service-box">
-                            <div id="guenstig-icon" class="service-icon"></div>
-                            <h1>Günstige Angebote</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt voluptatibus vitae, asperiores earum, quidem veritatis unde officiis.</p>
-                        </article>
-                    </div>
-                    <div class="col-2">
-                        <article class="service-box">
-                            <div id="schnell-icon" class="service-icon"></div>
-                            <h1>Schnelle Lieferung</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt voluptatibus vitae, asperiores earum, quidem veritatis unde officiis.</p>
-                        </article>
-                    </div>
-                    <div class="col-2">
-                        <article class="service-box">
-                            <div id="modern-icon" class="service-icon"></div>
-                            <h1>Modernes Design</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt voluptatibus vitae, asperiores earum, quidem veritatis unde officiis.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ÜBER-UNS-BEREICH -->
-        <section id="über-uns-bereich">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <header class="intro-container">
-                            <h1>Über uns</h1>
-                        </header>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <article id="über-uns-container">
-                            <p>
-                                I'm baby kitsch JOMO 8-bit gochujang, squid offal meditation cray four loko. Meggings mlkshk adaptogen 
-                                jianbing hammock tbh man braid, fanny pack chicharrones DSA big mood meh. Williamsburg lomo aesthetic 
-                                meggings ugh occupy humblebrag XOXO small batch pug iPhone chartreuse echo park. Vegan hella cray DSA 
-                                cardigan slow-carb keytar typewriter mumblecore marfa. Succulents street art organic, waistcoat JOMO 
-                                cronut photo booth gatekeep glossier forage disrupt blue bottle tacos crucifix.Meggings mlkshk adaptogen 
-                                jianbing hammock tbh man braid, fanny pack chicharrones DSA big mood meh. Williamsburg lomo aesthetic 
-                                meggings ugh occupy humblebrag XOXO small batch pug iPhone chartreuse echo park. 
-                            </p>
-                            <p>
-                                Asymmetrical post-ironic air plant, pickled tote bag single-origin coffee banjo flexitarian tonx narwhal 
-                                yr direct trade chambray pok pok. Schlitz solarpunk messenger bag cred cardigan tofu marfa normcore 
-                                food truck vice bodega boys yr XOXO DSA 90's. Listicle taxidermy gluten-free XOXO pop-up street art, 
-                                vinyl chillwave green juice. Hashtag poke twee blackbird spyplane taiyaki salvia you probably haven't 
-                                heard of them, cloud bread wolf knausgaard church-key. Meggings mlkshk adaptogen 
-                                jianbing hammock tbh man braid, fanny pack chicharrones DSA big mood meh. Williamsburg lomo aesthetic 
-                                meggings ugh occupy humblebrag XOXO small batch pug iPhone chartreuse echo park. Church-key brunch marxism, same farm-to-table 
-                                truffaut mukbang selvage artisan PBR&B coloring book. Schlitz pug YOLO drinking vinegar, cred grailed occupy.
-                            </p>
-                            <p>
-                                Hoodie lo-fi ethical, truffaut ascot glossier irony celiac disrupt VHS mukbang. Stumptown keytar pork 
-                                belly roof party, snackwave wolf hot chicken drinking vinegar glossier bitters heirloom cold-pressed 
-                                pug hexagon. Ramps cloud bread cardigan big mood messenger bag, neutral milk hotel food truck beard 
-                                meggings chillwave salvia kombucha church-key vape. Meggings mlkshk adaptogen 
-                                jianbing hammock tbh man braid, fanny pack chicharrones DSA big mood meh. Williamsburg lomo aesthetic 
-                                meggings ugh occupy humblebrag XOXO small batch pug iPhone chartreuse echo park. Pinterest edison bulb tattooed VHS cardigan semiotics 
-                                typewriter, kombucha Brooklyn. Lomo literally celiac sriracha.
-                            </p>
-                            <img src="./src/img/webdesign-logo-vertical.png" alt="Logo Webdesign made simple">
-                        </article>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-
-        <!-- FOOTER -->
-         <footer id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <span>Auto-Parts 41 - 2025</span>
-                        <nav id="footer-nav">
-                            <a href="impressum.html">Impressum</a>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-
-         </footer>
-        
-         <script defer>document.addEventListener("touchstart", function(){}, true);</script>
+   
+        <!-- SKRIPTE -->
+        <script>
+            function setCookie(name, value, days) {
+              const date = new Date();
+              date.setTime(date.getTime() + (days*24*60*60*1000));
+              const expires = "expires=" + date.toUTCString();
+              document.cookie = name + "=" + value + ";" + expires + ";path=/";
+            }
+          
+            function getCookie(name) {
+              const value = "; " + document.cookie;
+              const parts = value.split("; " + name + "=");
+              if (parts.length === 2) return parts.pop().split(";").shift();
+            }
+          
+            function hideConsentBox() {
+              document.getElementById("cookieConsentBox").style.display = "none";
+            }
+          
+            window.onload = function () {
+              if (!getCookie("cookieConsent")) {
+                document.getElementById("cookieConsentBox").style.display = "block";
+              }
+            }
+          
+            document.getElementById("acceptNecessary").addEventListener("click", function () {
+              setCookie("cookieConsent", JSON.stringify({
+                necessary: true,
+                analytics: false,
+                marketing: false
+              }), 365);
+              hideConsentBox();
+            });
+          
+            document.getElementById("acceptAll").addEventListener("click", function () {
+              const analytics = document.getElementById("analyticsCookies").checked;
+              const marketing = document.getElementById("marketingCookies").checked;
+          
+              setCookie("cookieConsent", JSON.stringify({
+                necessary: true,
+                analytics: analytics,
+                marketing: marketing
+              }), 365);
+              hideConsentBox();
+            });
+          </script>
+          
+          
     </body>
-
-</html>
+</html> 
