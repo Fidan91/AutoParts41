@@ -1,0 +1,36 @@
+Website:
+	https://auto-parts41.de/
+
+
+Joomla Administrator:
+	https://auto-parts41.de/administrator/
+
+	Benutzername:	yasin.fidan
+	Passwort:	9gikAKQcVr9J4qe
+
+
+
+E-BOOK - Joomla:
+	Benutzername:mr.fidan@hotmail.de
+	Kennwort: rm8qD83U
+	Login-URL:https://kunden.oliverpfeil.de
+
+
+Steurnummer: 48170//232229
+USt.-ID: DE266298331
+Registernr:
+Handelsgericht: Heimsheim
+
+
+Telekom Anmeldung
+	BFidan@t-online.de
+	MeliaLara3003
+
+FTP-Telekom
+	hosting.telekom.de
+	admin@auto-parts41.de
+	BDMLNfidan-41
+
+Wordpress Administrator:
+	yfadmin
+	u!M!DDB9keare!V
