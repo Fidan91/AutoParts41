@@ -1,14 +1,44 @@
+/* Roboto als Fließtext */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+         url('../fonts/Roboto/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Montserrat für Überschriften */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
+         url('../fonts/Montserrat/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 html, body {
     overflow-x: hidden;
     width: 100%;
-    font-family: 'EB Garmond', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+    
 }
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ec7f01; /* Beispielhafte Firmenfarbe */
+    margin-top: 1em;
+}
+
+
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
+
 
 /* === BUTTONS === */
 /* Google Maps */
@@ -178,6 +208,52 @@ html, body {
 .carousel-item{
     max-height: 460px;
     object-fit: cover;
+}
+
+.standort {
+    /* background: #f8f8f8; */
+    padding: 1em;
+    margin-bottom: 1em;
+    border-left: 5px solid #ec7f01;
+    border-radius: 8px;
+}
+
+.standort h3{
+    color: #ec7f01;
+    letter-spacing: 0.5px;
+    margin-left: 40px;
+}
+.standort-icon{
+    width: 50px;
+    height: 16px;
+    color: #ec7f01;
+
+}
+
+/* Tabelle in Standorte */
+table {
+    width: 100%;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 8px;
+    vertical-align: top;
+    
+}
+
+.spalte1 {
+    text-align: right;
+    vertical-align: top;
+}
+
+.spalte2 {
+    width: 90%;
+
+}
+.spalte2 > a{
+    text-decoration: none;
+    color: inherit;
 }
 
 

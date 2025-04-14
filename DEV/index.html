@@ -52,8 +52,8 @@
         <header id="header-img"  class="hero bg-dark text-white text-center py-5">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-6 text-start bg-dark bg-opacity-75 p-4 rounded">
-                        <h1>Herzlich willkommen bei <br>Auto-Parts 41</h1>
+                    <div class="col-md-6 text-start bg-dark bg-opacity-75 p-4 rounded text-center">
+                        <h1>Herzlich Willkommen bei <br>Auto-Parts 41!</h1>
                         <p>Ihr zuverlässiger Partner für hochwertige Autoteile!</p>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
         <!-- Standorte -->
         <section id="locations" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-4">Unsere Standorte</h2>
+                <h2 class="text-center mb-4 pb-4">Unsere Standorte</h2>
                 
                 <!-- Standort Heimsheim -->
                 <div class="row mb-5 align-items-center">
@@ -111,14 +111,26 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 standort">
                         <h3>Heimsheim</h3>
-                        <p><strong>Adresse:</strong> Musterstraße 1, 71296 Heimsheim</p>
-                        <p><strong>Telefon:</strong> 07033-123456</p>
-                        <p><strong>Öffnungszeiten:</strong><br>Mo-Fr: 08:00 - 18:00 Uhr<br>Sa: 09:00 - 14:00 Uhr</p>
-                        <a href="https://goo.gl/maps/example" class="btn btn-custom" target="_blank">Google Maps</a>
-                        <a href="https://maps.apple.com/?q=Musterstraße+1,71296+Heimsheim" class="btn btn-outline-custom" target="_blank">Apple Maps</a>
-                        <a href="https://g.page/r/example" class="btn btn-outline-custom" target="_blank">Google Bewertung</a>
+                        <table>
+                            <tr>
+                              <td class="spalte1"><i class="bi bi-geo-alt-fill standort-icon"></i></td>
+                              <td class="spalte2">Pforzheimer Str. 11<br>71296 Heimsheim</td>
+                            </tr>
+                            <tr>
+                              <td class="spalte1"><i class="bi bi-telephone-fill standort-icon"></i></td>
+                              <td class="spalte2"><a href="07033/4680150"> 07033/468 01 50</a></td>
+                            </tr>
+                            <tr>
+                              <td class="spalte1"><i class="bi bi-clock-fill standort-icon"></i></td>
+                              <td class="spalte2"><strong>Montag - Freitag</strong><br>08:00 - 12:30 Uhr<br>14:00 - 18:00 Uhr<br><strong>Samstag</strong><br>08:30 - 14:00 Uhr</td>
+                            </tr>
+                        </table><br>
+                        <!-- Buttons Heimsheim -->
+                        <a href="#" class="btn btn-custom" target="_blank"><i class="bi bi-geo-alt-fill"></i> Google Maps</a>
+                        <a href="#" alt="Apple Maps" class="btn btn-outline-custom" target="_blank"><img class="standort-icon apple-icon"src="./src/img/icon/navigation.svg" alt="Apple Navigation Icon"> Apple Maps</a>
+                        <a href="#" class="btn btn-outline-custom" target="_blank"><i class="bi bi-star-fill"></i> Google Bewertung</a>
                     </div>
                 </div>
                 
@@ -170,16 +182,35 @@
                         </div>
                     </div>
                     <!-- Anschrift Rosenheim -->
-                    <div class="col-md-6 order-md-1">
+                    <div class="col-md-6 order-md-1 standort">
                         <h3>Rosenheim</h3>
-                        <p><strong>Adresse:</strong> Beispielweg 5, 83024 Rosenheim</p>
-                        <p><strong>Telefon:</strong> 08031-654321</p>
-                        <p><strong>Öffnungszeiten:</strong><br>Mo-Fr: 08:00 - 18:00 Uhr<br>Sa: 09:00 - 14:00 Uhr</p>
-                        <a href="https://goo.gl/maps/example" class="btn btn-custom" target="_blank">Google Maps</a>
-                        <a href="https://maps.apple.com/?q=Beispielweg+5,83024+Rosenheim" class="btn btn-outline-custom" target="_blank">Apple Maps</a>
-                        <a href="https://g.page/r/example" class="btn btn-outline-custom" target="_blank">Google Bewertung</a>
+                        <table>
+                            <tr>
+                              <td class="spalte1"><i class="bi bi-geo-alt-fill standort-icon"></i></td>
+                              <td class="spalte2">Pichlmayrstr. 21A<br>83024 Rosenheim</td>
+                            </tr>
+                            <tr>
+                              <td class="spalte1"><i class="bi bi-telephone-fill standort-icon"></i></td>
+                              <td class="spalte2"><a href="08031/2719001"> 08031/271 90 01</a></td>
+                            </tr>
+                            <tr>
+                              <td class="spalte1"><i class="bi bi-clock-fill standort-icon"></i></td>
+                              <td class="spalte2"><strong>Montag - Freitag</strong><br>08:00 - 12:30 Uhr<br>14:00 - 18:00 Uhr<br><strong>Samstag</strong><br>08:30 - 14:00 Uhr</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <a href="https://goo.gl/maps/example" class="btn btn-custom" target="_blank"><i class="bi bi-geo-alt-fill"></i> Google Maps</a>
+                        <a href="https://maps.apple.com/?q=Beispielweg+5,83024+Rosenheim" class="btn btn-outline-custom" target="_blank"><i class="bi bi-caret-up-fill"></i> Apple Maps</a>
+                        <a href="https://g.page/r/example" class="btn btn-outline-custom" target="_blank"><i class="bi bi-star-fill"></i> Google Bewertung</a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Standorte -->
+        <section id="locations" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4 pb-4">Unsere Partner</h2>        
             </div>
         </section>
 
