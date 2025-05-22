@@ -1,3 +1,9 @@
+
+
+/* ========================= */
+/* === SCHRIFTART, GRUNDEINSTELLUNGEN === */
+/* ========================= */
+
 /* Roboto als Fließtext */
 @font-face {
     font-family: 'Roboto';
@@ -18,20 +24,14 @@
 
 html, body {
     overflow-x: hidden;
-    width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-
-    
 }
   
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-    color: #ec7f01; /* Beispielhafte Firmenfarbe */
-    margin-top: 1em;
 }
-
-
 
 *,
 *::before,
@@ -40,7 +40,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+
+/* ========================= */
 /* === BUTTONS === */
+/* ========================= */
+
 /* Google Maps */
 #locations .btn-custom{
     background-color: #ec7f01;
@@ -68,28 +73,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
+/* ========================= */
 /* === NAVIGATIONSLEISTE === */
-.navbar {
-    padding: 15px 0; /* Standardhöhe */
-    background-color: white !important; /* Weiß mit Schatten */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-}
-
-.navbar.shrink {
-    padding: 8px 0; /* Kleiner beim Scrollen */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Stärkere Schatten */
-    padding: 5px 0;
-}
-
-.navbar-logo{
-    width: 90px;
-    height: 90px;
-}
+/* ========================= */
 
 /* Navbar Hover */
 .navbar-nav .nav-item .nav-link {
@@ -119,26 +105,12 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-
-/* Whatsapp */
-.whatsapp-btn {
-    background-color: #25D366;
-    border: none;
-    display: flex;
-    align-items: center;
-    padding: 6px 10px;
-    font-weight: bold;
-    font-size: 14pxx;
-}
-
-.whatsapp-btn:hover {
-    background-color: #1EBE5D;
-}
-
+/* Abstand zwischen Logo und Text (Navbar Whatsapp Button) */
 .whatsapp-logo {
-    margin-right: 6px;    
+    margin-right: 6px;
 }
 
+/* Header-Bereich */
 #header-img{
     background: url('../img/Eingang_HH2.jpg') top/cover no-repeat;
     height: 80vh;
@@ -148,74 +120,58 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 80px;
 }
 
-/* === SERVICE BEREICH */
+
+
+
+/* ========================= */
+/* === HEADER BEREICH === */
+/* ========================= */
+
+#header-img p{
+    font-size: 110%;
+}
+
+/* ========================= */
+/* === SERVICE BEREICH === */
+/* ========================= */
 #service{
     background-color: #e7e4dc;
-    width: 100vw;
+    padding: 60px 0;
 }
 
-#service .container{
-    display:flex;
-    flex-direction: row;
-}
-
-#service .service-item{
-    flex-direction: row;
-    justify-content: space-between;
-
-}
-
-.service-wrapper {
-    background-color: white;
-    border-radius: 50%;
-    padding: 20px;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* leichter Schatten */
-  }
-
-.service-img{
-    width: 75px;
-    height: 75px;
+.service-icon{
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
     object-fit: contain;
     transition: transform 1s;
-
+  
 }
 
-.service-img:hover{
+.service-icon:hover{
     transform: rotateZ(360deg);
 }
 
-@media (max-width: 768px) {
-    .service-wrapper {
-      width: 80px;
-      height: 80px;
-      padding: 15px;
-    }
-  
-    .service-img {
-      width: 40px;
-      height: 40px;
-    }
-  }
+#service p{
+    font-size: 115%;
+}
+
   
 
+/* ========================= */
 /* === STANDORTE === */
+/* ========================= */
 .carousel-item{
-    max-height: 460px;
+
     object-fit: cover;
 }
 
 .standort {
-    /* background: #f8f8f8; */
     padding: 1em;
     margin-bottom: 1em;
     border-left: 5px solid #ec7f01;
     border-radius: 8px;
+    font-size: 110%;
 }
 
 .standort h3{
@@ -229,11 +185,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #ec7f01;
 }
 
-
-
-
-
-
 /* Tabelle in Standorte */
 table {
     width: 100%;
@@ -243,7 +194,6 @@ table {
 td {
     padding: 8px;
     vertical-align: top;
-    
 }
 
 .spalte1 {
@@ -261,9 +211,29 @@ td {
 }
 
 
+/* === BESTELLUNG IN 4 SCHRITTEN === */
+#bestellung{
+    background-color: #7E8987;
+}
+
+#bestellung h2{
+    color: white;
+}
+
+W
+
+#bestellung img{
+    border: white;
+}
+
+
 /* === PARTNER === */
 /* Infinite Scroll Animation 
 Erstellt mit Hilfe von Youtube-Video: https://www.youtube.com/watch?v=Reu0hHbis5w  */
+#brands p{
+    font-size: 110%;
+}
+
 .scroll-wrapper{
     max-width: 1536px;
     margin-inline: auto;
