@@ -128,8 +128,10 @@ h1, h2, h3, h4, h5, h6 {
 /* ========================= */
 
 #header-img p{
-    font-size: 110%;
+    font-size: 115%;
 }
+
+
 
 /* ========================= */
 /* === SERVICE BEREICH === */
@@ -145,7 +147,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 40px;
     object-fit: contain;
     transition: transform 1s;
-  
 }
 
 .service-icon:hover{
@@ -161,17 +162,40 @@ h1, h2, h3, h4, h5, h6 {
 /* ========================= */
 /* === STANDORTE === */
 /* ========================= */
-.carousel-item{
-
-    object-fit: cover;
+.carousel-inner img {
+  max-height: 478px;
+  object-fit: cover;
 }
+
+@media (max-width: 992px) {
+  .carousel-inner img {
+    max-height: 430px;
+  }
+}
+
+@media (max-width: 690px) {
+  .carousel-inner img {
+    max-height: 330px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-inner img {
+    max-height: 250px;
+  }
+}
+
 
 .standort {
     padding: 1em;
     margin-bottom: 1em;
     border-left: 5px solid #ec7f01;
     border-radius: 8px;
-    font-size: 110%;
+    font-size: 115%;
+}
+
+.standort a{
+    margin-bottom: 5px;
 }
 
 .standort h3{
@@ -211,7 +235,9 @@ td {
 }
 
 
+/* ========================= */
 /* === BESTELLUNG IN 4 SCHRITTEN === */
+/* ========================= */
 #bestellung{
     background-color: #7E8987;
 }
@@ -220,18 +246,18 @@ td {
     color: white;
 }
 
-W
 
-#bestellung img{
-    border: white;
+/* ========================= */
+/* === PARTNER === */
+/* ========================= */
+
+/* Infinite Scroll Animation Erstellt mit Hilfe von Youtube-Video: https://www.youtube.com/watch?v=Reu0hHbis5w  */
+#brands{
+    padding: 60px 0;
 }
 
-
-/* === PARTNER === */
-/* Infinite Scroll Animation 
-Erstellt mit Hilfe von Youtube-Video: https://www.youtube.com/watch?v=Reu0hHbis5w  */
 #brands p{
-    font-size: 110%;
+    font-size: 115%;
 }
 
 .scroll-wrapper{
@@ -267,7 +293,6 @@ Erstellt mit Hilfe von Youtube-Video: https://www.youtube.com/watch?v=Reu0hHbis5
     animation-timing-function: linear;
     animation-iteration-count: infinite; /*startet immer wieder neu */
     /* filter: grayscale(100%); */
-
 }
 
 .scroll-item1{
@@ -312,7 +337,52 @@ Erstellt mit Hilfe von Youtube-Video: https://www.youtube.com/watch?v=Reu0hHbis5
     background-size: contain;
 }
 
+
+
+/* ========================= */
+/* === WIR ÜBER UNS === */
+/* ========================= */
+
+#about p{
+    font-size: 115%;
+}
+
+
+
+
+/* ========================= */
+/* === INSTAGRAM FEEDS === */
+/* ========================= */
+
+.instagram-wrapper{
+    max-width: 100%;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+.team-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ========================= */
 /* === COOKIES === */
+/* ========================= */
+
 #cookieConsentBox{
     z-index: 9999;
     display: none;
@@ -328,8 +398,9 @@ Erstellt mit Hilfe von Youtube-Video: https://www.youtube.com/watch?v=Reu0hHbis5
 
 
 
-
+/* ========================= */
 /* === FOOTER === */
+/* ========================= */
 
 #footer a{
     text-decoration: none;
