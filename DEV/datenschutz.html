@@ -132,7 +132,7 @@
                             </div>
                         </div><br>
                         
-                        <span class="d-none d-md-block"><small>&#169 2025 Auto-Parts 41 - Alle Rechte vorbehalten</small></span>
+                        <span class="d-none d-md-block"> <small>&#169 <span class="year"></span> Auto-Parts 41 - Alle Rechte vorbehalten!</small></span>
                     </div>
                     <!-- Adresse Heimsheim -->
                     <div class="col-12 col-md-4 mb-3 mb-md-0">
@@ -161,17 +161,31 @@
                             <a href="#" id="openCookieSettings" class="small rechtliche-links">Cookie-Einstellungen</a><span>&#9;|</span>
                             <a href="impressum.html" class="small rechtliche-links">Impressum</a>
                         </p>
+                        <!--Verschiebt diesen Bereich bei Mobilen Geräten nach ganz unten-->
                         <p class="d-md-none mt-2">
-                            <small>&copy; 2025 Auto-Parts 41 - Alle Rechte vorbehalten</small>
+                            <small>&copy; <span class="year"></span> Auto-Parts 41 - Alle Rechte vorbehalten!</small>
                         </p>
                     </div>
                 </div>
             </div>
         </footer>
 
+         <!-- Fixed Whatsapp Button -->
+        <a href="https://wa.me/4915146150632" target="_blank" 
+            class="position-fixed bottom-0 end-0 m-3 d-flex align-items-center justify-content-center rounded-circle"
+            style="width: 60px; height: 60px; background-color: #198754; color: white; font-size: 28px; z-index: 1050;">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+
+
         <!-- SKRIPTE -->
         <!-- Toogle Script -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+        <!-- Jahr automatisch aktualisieren -->
+        <script>
+        document.querySelectorAll(".year").forEach(el => {
+            el.textContent = new Date().getFullYear();
+        });
+        </script>
     </body>
 </html>

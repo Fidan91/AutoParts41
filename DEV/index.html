@@ -348,21 +348,27 @@
 
                     <div class="row justify-content-center mt-4">
                         <div class="col-md-8">
-                            <p><strong>Geschäftsführer:</strong> Mein Ziel war es immer, Qualität und Kundennähe zu verbinden. Mit unserem Team stehen wir Ihnen täglich engagiert zur Seite.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.</p>
+                            <h2><strong>Herzlich willkommen bei Auto-Parts41!</strong> </h2>
+                            <p>
+                                Mein Name ist <strong>Bayram Fidan</strong>, ich bin Inhaber und Geschäftsführer unseres Unternehmens. Seit über 15 Jahren bin ich in der Automobilbranche tätig 
+                                und habe mich auf hochwertige Kfz-Ersatzteile zu fairen Preisen spezialisiert.
+                            </p>
+                            <p>
+                                Mit dem Verkauf von Kfz-Ersatzteilen haben wir in Heimsheim begonnen und sind nun seit <strong>2024 auch in Rosenheim</strong> zu finden. Ich bin gelernter Kfz-Mechaniker 
+                                und übte diesen Beruf lange vorher aus. Später kam mir die Idee Kfz-Ersatzteile zu verkaufen und gründete <strong>im Jahre 2015 Auto-Parts 41 in 
+                                Heimsheim</strong>, um Werkstätten, Autoliebhabern und Kunden zuverlässige, unkomplizierte und günstige Alternative für Ersatzteile zu bieten. 
+                            </p>
+                            <p>
+                                Neben meiner Arbeit genieße ich die Zeit mit meiner Familie - ich bin verheiratet und habe 3 Töchter - die mir die nötige Balance für meine Arbeit geben.
+                            </p>
+                            <p>
+                                Ich freue mich darauf, Sie bei <strong>Auto-Parts 41</strong> begrüßen zu dürfen.
+                            </p>
+
                         </div>
                     </div>
 
-                    <div class="row text-center mt-5">
-                        <h2 class="mb-4">Team Auto-Parts 41</h2>
-                        <div class="col-md-6 mb-4">
-                            <img src="./src/img/Teamfotos/team1.jpg" alt="Teammitglied 1" class="team-img">
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <img src="./src/img/Teamfotos/team2.jpg" alt="Teammitglied 2" class="team-img">
-                        </div>
-                    </div>                  
+                 
                 </div>
             </div>
         </section>
@@ -431,7 +437,8 @@
                             </div>
                         </div><br>
                         
-                        <span class="d-none d-md-block"><small>&#169 2025 Auto-Parts 41 - Alle Rechte vorbehalten</small></span>
+                        <span class="d-none d-md-block"> <small>&#169 <span class="year"></span> Auto-Parts 41 - Alle Rechte vorbehalten!</small></span>
+
                     </div>
                     <!-- Adresse Heimsheim -->
                     <div class="col-12 col-md-4 mb-3 mb-md-0">
@@ -460,16 +467,25 @@
                             <a href="#" id="openCookieSettings" class="small rechtliche-links">Cookie-Einstellungen</a><span>&#9;|</span>
                             <a href="impressum.html" class="small rechtliche-links">Impressum</a>
                         </p>
+                        <!--Verschiebt diesen Bereich bei Mobilen Geräten nach ganz unten-->
                         <p class="d-md-none mt-2">
-                            <small>&copy; <span id="year"></span> Auto-Parts 41 - Alle Rechte vorbehalten!</small>
+                            <small>&copy; <span class="year"></span> Auto-Parts 41 - Alle Rechte vorbehalten!</small>
                         </p>
                     </div>
                 </div>
             </div>
         </footer>
 
-        <!-- COOKIES -->
-        
+        <!-- Fixed Whatsapp Button -->
+        <a href="https://wa.me/4915146150632" target="_blank" 
+            class="position-fixed bottom-0 end-0 m-3 d-flex align-items-center justify-content-center rounded-circle"
+            style="width: 60px; height: 60px; background-color: #198754; color: white; font-size: 28px; z-index: 1050;">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+
+
+
+
 
    
         <!-- SKRIPTE -->
@@ -479,7 +495,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Jahr automatisch aktualisieren -->
         <script>
-            document.getElementById("year").textContent = new Date().getFullYear();
+        document.querySelectorAll(".year").forEach(el => {
+            el.textContent = new Date().getFullYear();
+        });
         </script>
 
     </body>
