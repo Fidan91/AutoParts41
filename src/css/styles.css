@@ -347,7 +347,7 @@ td {
 
 .scroll-item7{
     animation-delay: calc(30s / 7 * (7 - 7) * -1);
-    background: url("../img/Anbieter/ROWE1.jpg") no-repeat center;
+    background: url("..//img/Anbieter/Rowe1.jpg") no-repeat center;
     background-size: contain;
 }
 
