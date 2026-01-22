@@ -70,6 +70,13 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ec7f01; /* Farbe */
 }
 
+@media (max-width: 576px) {
+    h1.letter-space {
+        font-size: 1.6rem;
+    }
+}
+
+
 
 /* ========================= */
 /* === BUTTONS === */
