@@ -55,6 +55,22 @@ h1, h2, h3, h4, h5, h6 {
     color: #000;
 }
 
+.headline-number {
+  position: relative;
+  display: inline-block;
+}
+
+.headline-number::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;        /* Abstand zum Text */
+  width: 100%;
+  height: 3px;         /* Dicke des Strichs */
+  background-color: #ec7f01; /* Farbe */
+}
+
+
 /* ========================= */
 /* === BUTTONS === */
 /* ========================= */
