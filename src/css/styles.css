@@ -379,6 +379,9 @@ td {
 /* ========================= */
 /* === WIR ÜBER UNS === */
 /* ========================= */
+#about  {
+    background-color: #e7e4dc;
+}
 
 #about p{
     font-size: 115%;
@@ -413,7 +416,13 @@ td {
   }
 }
 
-
+/* ========================= */
+/* === LAST-LINE Text === */
+/* ========================= */
+#lastLine{
+    background-color: #7E8987;
+    min-height: 120px;
+}
 
 /* ========================= */
 /* === FOOTER === */
@@ -442,7 +451,8 @@ td {
 
 .footer-img-logo{
     width: 300px;
-    height: 80px;
+    max-width: 100%;
+    height: auto;
 }
 
 #footer .rechtliche-links:hover{
