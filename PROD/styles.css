@@ -1,0 +1,482 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+         url('../fonts/Roboto/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
+         url('../fonts/Montserrat/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html, body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+  
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* === IMPRESSUM === */
+/* Überschrift Letter-Space */
+
+.letter-space {
+  letter-spacing: 0.3rem;
+}
+
+.impressum-link {
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    color: #000;
+}
+.impressum-link:hover {
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    color: #000;
+}
+
+.headline-number {
+  position: relative;
+  display: inline-block;
+}
+
+.headline-number::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;        /* Abstand zum Text */
+  width: 100%;
+  height: 3px;         /* Dicke des Strichs */
+  background-color: #ec7f01; /* Farbe */
+}
+
+@media (max-width: 576px) {
+    h1.letter-space {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+/* ========================= */
+/* === BUTTONS === */
+/* ========================= */
+
+/* Google Maps */
+#locations .btn-custom{
+    background-color: #ec7f01;
+    color: white;
+}
+
+#locations .btn-custom:hover{
+    border-color: #ec7f01;
+    background-color: white    ;
+    color: #ec7f01;
+}
+
+
+/* Apple Maps & Google Bewertung */
+#locations .btn-outline-custom {
+    border-color: #ec7f01; /* Randfarbe */
+    color: #ec7f01; /* Textfarbe */
+}
+
+#locations .btn-outline-custom:hover {
+    background-color: #ec7f01; /* Hintergrundfarbe beim Hover */
+    color: white; /* Textfarbe beim Hover */
+}
+
+
+/* ========================= */
+/* === NAVIGATIONSLEISTE === */
+/* ========================= */
+
+/* Navbar Hover */
+.navbar-nav .nav-item .nav-link {
+    position: relative;
+    color: #000; /* Standardfarbe */
+    transition: color 0.3s ease-in-out;
+    text-decoration: none; /* Entfernt Standard-Unterstreichung */
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #ec7f01; /* Farbe der Unterstreichung */
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ec7f01; /* Ändert die Schriftfarbe */
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Abstand zwischen Logo und Text (Navbar Whatsapp Button) */
+.whatsapp-logo {
+    margin-right: 6px;
+}
+
+/* Header-Bereich */
+#header-img{
+    background: url('../img/Eingang_HH2.jpg') top/cover no-repeat;
+    height: 80vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+
+
+
+/* ========================= */
+/* === HEADER BEREICH === */
+/* ========================= */
+
+#header-img p{
+    font-size: 115%;
+}
+
+
+
+/* ========================= */
+/* === SERVICE BEREICH === */
+/* ========================= */
+#service{
+    background-color: #e7e4dc;
+    padding: 60px 0;
+}
+
+.service-icon{
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    transition: transform 1s;
+}
+
+.service-icon:hover{
+    transform: rotateZ(360deg);
+}
+
+#service p{
+    font-size: 115%;
+}
+
+  
+
+/* ========================= */
+/* === STANDORTE === */
+/* ========================= */
+.carousel-inner img {
+  max-height: 478px;
+  -o-object-fit: cover;
+     object-fit: cover;
+
+}
+
+@media (max-width: 992px) {
+  .carousel-inner img {
+    max-height: 430px;
+  }
+}
+
+@media (max-width: 690px) {
+  .carousel-inner img {
+    max-height: 330px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-inner img {
+    max-height: 250px;
+  }
+}
+
+
+.standort {
+    padding: 1em;
+    margin-bottom: 1em;
+    border-left: 5px solid #ec7f01;
+    border-radius: 8px;
+    font-size: 115%;
+}
+
+.standort a{
+    margin-bottom: 5px;
+}
+
+.standort h3{
+    color: #ec7f01;
+    letter-spacing: 0.5px;
+    margin-left: 40px;
+}
+
+.standort-icon{
+    font-size: 22px;
+    color: #ec7f01;
+}
+
+/* Tabelle in Standorte */
+table {
+    width: 100%;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 8px;
+    vertical-align: top;
+}
+
+.spalte1 {
+    text-align: right;
+    vertical-align: top;
+}
+
+.spalte2 {
+    width: 90%;
+
+}
+.spalte2 > a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ========================= */
+/* === BESTELLUNG IN 4 SCHRITTEN === */
+/* ========================= */
+#bestellung{
+    background-color: #7E8987;
+}
+
+#bestellung h2{
+    color: white;
+}
+
+
+/* ========================= */
+/* === PARTNER === */
+/* ========================= */
+
+/* Infinite Scroll Animation Erstellt mit Hilfe von Youtube-Video: https://www.youtube.com/watch?v=Reu0hHbis5w  */
+#brands{
+    padding: 60px 0;
+}
+
+#brands p{
+    font-size: 115%;
+}
+
+.scroll-wrapper{
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden; /*Behält das item in der Wrapper Box */
+    -webkit-mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,1) 80%,
+        rgba(0,0,0,0)
+    );
+            mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,1) 80%,
+        rgba(0,0,0,0)
+    );
+}
+
+@-webkit-keyframes scrollLeft{
+    to{
+        left: -200px;
+    }
+}
+
+@keyframes scrollLeft{
+    to{
+        left: -200px;
+    }
+}
+
+.scroll-item{
+    width: 200px;
+    height: 100px;
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(200px * 7), 100%);
+    -webkit-animation-name: scrollLeft;
+            animation-name: scrollLeft;
+    -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite; /*startet immer wieder neu */
+    /* filter: grayscale(100%); */
+}
+
+.scroll-item1{
+    -webkit-animation-delay: calc(30s / 7 * (7 - 1) * -1);
+            animation-delay: calc(30s / 7 * (7 - 1) * -1); /*Berechnung für das Starten nacheinander*/
+    background: url("../img/ABS_Bremsen.jpg") no-repeat center;
+    background-size: contain;
+}
+
+.scroll-item2{
+    -webkit-animation-delay: calc(30s / 7 * (7 - 2) * -1);
+            animation-delay: calc(30s / 7 * (7 - 2) * -1);
+    background: url("../img/Ester.jpg") no-repeat center;
+    background-size: contain;
+}
+
+.scroll-item3{
+    -webkit-animation-delay: calc(30s / 7 * (7 - 3) * -1);
+            animation-delay: calc(30s / 7 * (7 - 3) * -1);
+    background: url("../img/MANNOL.jpg") no-repeat center;
+    background-size: contain;
+}
+
+.scroll-item4{
+    -webkit-animation-delay: calc(30s / 7 * (7 - 4) * -1);
+            animation-delay: calc(30s / 7 * (7 - 4) * -1);
+    background: url("../img/OEM.jpg") no-repeat center;
+    background-size: contain;
+}
+
+.scroll-item5{
+    -webkit-animation-delay: calc(30s / 7 * (7 - 5) * -1);
+            animation-delay: calc(30s / 7 * (7 - 5) * -1);
+    background: url("../img/OSOM_System.jpg") no-repeat center;
+    background-size: contain;
+}
+
+.scroll-item6{
+    -webkit-animation-delay: calc(30s / 7 * (7 - 6) * -1);
+            animation-delay: calc(30s / 7 * (7 - 6) * -1);
+    background: url("../img/PETEC2.jpg") no-repeat center;
+    background-size: contain;
+}
+
+.scroll-item7{
+    -webkit-animation-delay: calc(30s / 7 * (7 - 7) * -1);
+            animation-delay: calc(30s / 7 * (7 - 7) * -1);
+    background: url("../img/Rowe1.jpg") no-repeat center;
+    background-size: contain;
+}
+
+
+
+/* ========================= */
+/* === WIR ÜBER UNS === */
+/* ========================= */
+#about  {
+    background-color: #e7e4dc;
+}
+
+#about p{
+    font-size: 115%;
+}
+
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+    -o-object-position: center 30%;
+       object-position: center 30%;
+    border: 3px solid rgba(255,255,255,0.8);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+
+/* ========================= */
+/* === INSTAGRAM FEEDS === */
+/* ========================= */
+
+.instagram-wrapper{
+    max-width: 100%;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+@media (max-width: 690px) {
+  .instagram-wrapper {
+    margin-bottom: 20px;
+  }
+}
+
+/* ========================= */
+/* === LAST-LINE Text === */
+/* ========================= */
+#lastLine{
+    background-color: #7E8987;
+    min-height: 120px;
+}
+
+/* ========================= */
+/* === FOOTER === */
+/* ========================= */
+
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+#footer .folge-uns-container{
+    display: flex;
+}
+#footer .icon-wrapper{
+    transition: transfrom .2s ease-in-out;
+    margin-right: 15px;
+}
+
+#footer .icon-wrapper:hover{
+    transform: scale(1.2);
+}
+
+#footer .footer-header{
+    color: #ec7f01;
+    letter-spacing: 0.1rem;
+}
+
+.footer-img-logo{
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+#footer .rechtliche-links:hover{
+    text-decoration: underline;
+}
